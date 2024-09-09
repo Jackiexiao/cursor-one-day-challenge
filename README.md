@@ -5,3 +5,12 @@
 
 ## 效果展示
 ![](./demo.jpg)
+
+## 其中部分部署到了 vercel 
+> 其他的懒得弄了哈哈
+
+* 2048 小游戏
+https://2048-umber-theta.vercel.app/
+
+* Landing Page （非实际产品）
+https://voiceflow-landingpage.vercel.app/
