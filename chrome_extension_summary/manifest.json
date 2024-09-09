@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "网页内容总结器",
+  "version": "1.0",
+  "description": "一键总结网页内容的Chrome扩展",
+  "permissions": ["activeTab", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "options_page": "options.html",
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}

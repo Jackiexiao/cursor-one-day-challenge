@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>网页内容总结器设置</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>设置</h1>
+  <form id="settings-form">
+    <label for="api-key">API Key:</label>
+    <input type="text" id="api-key" name="api-key"><br><br>
+    
+    <label for="base-url">Base URL:</label>
+    <input type="text" id="base-url" name="base-url"><br><br>
+    
+    <label for="language">总结语言:</label>
+    <select id="language" name="language">
+      <option value="zh">中文</option>
+      <option value="en">英文</option>
+      <!-- 添加更多语言选项 -->
+    </select><br><br>
+    
+    <label for="prompt">自定义Prompt:</label>
+    <textarea id="prompt" name="prompt">帮我总结这个网页的要点</textarea><br><br>
+    
+    <button type="submit">保存设置</button>
+  </form>
+  <script src="options.js"></script>
+</body>
+</html>

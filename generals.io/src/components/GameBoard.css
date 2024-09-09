@@ -1,0 +1,71 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-controls {
+  margin-bottom: 10px;
+}
+
+.game-controls button {
+  margin: 0 5px;
+  padding: 5px 10px;
+}
+
+.game-info {
+  margin-bottom: 10px;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.tile {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tile.mountain {
+  background-color: #888;
+}
+
+.tile.city {
+  background-color: #ffd700;
+}
+
+.tile.general {
+  border: 2px solid #000;
+}
+
+.tile.selected {
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.units {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.general-marker {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
